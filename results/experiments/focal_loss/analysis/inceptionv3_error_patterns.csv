@@ -1,0 +1,16 @@
+model,true_class,pred_class,count,share_of_true
+inceptionv3,insect_damage,good,32,0.2991
+inceptionv3,black,good,17,0.1288
+inceptionv3,good,black,16,0.0368
+inceptionv3,dry_pods,chipped,16,0.172
+inceptionv3,insect_damage,black,11,0.1028
+inceptionv3,insect_damage,chipped,10,0.0935
+inceptionv3,chipped,good,10,0.1042
+inceptionv3,chipped,insect_damage,9,0.0938
+inceptionv3,good,chipped,9,0.0207
+inceptionv3,chipped,dry_pods,7,0.0729
+inceptionv3,good,insect_damage,6,0.0138
+inceptionv3,dry_pods,black,6,0.0645
+inceptionv3,black,chipped,6,0.0455
+inceptionv3,black,dry_pods,5,0.0379
+inceptionv3,chipped,black,5,0.0521

@@ -1,0 +1,4 @@
+model,mean_confidence,mean_confidence_correct,mean_confidence_wrong,confidence_gap,share_below_0.5
+resnet50,0.7733,0.8131,0.5903,0.2228,0.117
+mobilenetv3,0.7327,0.7718,0.5658,0.206,0.1541
+inceptionv3,0.7388,0.7821,0.5622,0.2199,0.1506

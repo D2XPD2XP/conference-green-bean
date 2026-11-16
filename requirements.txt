@@ -1,0 +1,47 @@
+# Deep learning core
+# CATATAN GPU: di Windows, `pip install torch` dari PyPI memberi build CPU-only.
+# Untuk GPU, install dulu build CUDA SEBELUM file ini:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
+# RTX seri 50 (Blackwell, sm_120) wajib cu128.
+torch>=2.1.0
+torchvision>=0.16.0
+
+# Data & numerik
+numpy>=1.24.0
+pandas>=2.0.0
+Pillow>=10.0.0
+opencv-python>=4.8.0
+
+# Visualisasi
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.17.0
+
+# Metrik & utilitas ML
+scikit-learn>=1.3.0
+tqdm>=4.65.0
+pyyaml>=6.0
+python-dotenv>=1.0.0
+
+# Augmentasi offline (src/data/offline_augmentation.py)
+albumentations>=1.3.0
+
+# Test-time augmentation saat evaluasi (src/evaluation/tta.py)
+ttach>=0.0.3
+
+# Interpretabilitas & visualisasi fitur (src/analysis/)
+grad-cam>=1.4.0
+umap-learn>=0.5.0
+
+# Teknik oversampling tambahan (SMOTE dsb.) untuk eksperimen imbalance
+imbalanced-learn>=0.11.0
+
+# Notebook
+jupyter>=1.0.0
+ipykernel>=6.25.0
+
+# Dataset management
+roboflow>=1.1.0
+
+# Testing
+pytest>=7.4.0

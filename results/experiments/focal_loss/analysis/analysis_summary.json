@@ -1,0 +1,184 @@
+{
+  "models": [
+    "resnet50",
+    "mobilenetv3",
+    "inceptionv3"
+  ],
+  "evaluated": [
+    "inceptionv3",
+    "mobilenetv3",
+    "resnet50"
+  ],
+  "comparison": [
+    {
+      "model": "resnet50",
+      "accuracy": 0.8215527230590962,
+      "precision": 0.7791145215720812,
+      "recall": 0.7777727987042464,
+      "f1": 0.7756758376343675,
+      "defect_recall": 0.9135514018691588,
+      "defect_miss_rate": 0.086449,
+      "params_total": 23518277,
+      "inference_ms": 4.6371
+    },
+    {
+      "model": "mobilenetv3",
+      "accuracy": 0.8053302433371958,
+      "precision": 0.7615121822564405,
+      "recall": 0.7424229957197792,
+      "f1": 0.7493981367005993,
+      "defect_recall": 0.8808411214953271,
+      "defect_miss_rate": 0.119159,
+      "params_total": 4208437,
+      "inference_ms": 4.9784
+    },
+    {
+      "model": "inceptionv3",
+      "accuracy": 0.7960602549246814,
+      "precision": 0.7496617710670133,
+      "recall": 0.7114566828084573,
+      "f1": 0.7239261652191222,
+      "defect_recall": 0.852803738317757,
+      "defect_miss_rate": 0.147196,
+      "params_total": 21795813,
+      "inference_ms": 9.5104
+    }
+  ],
+  "convergence": [
+    {
+      "model": "resnet50",
+      "epochs_ran": 30,
+      "best_epoch": 13,
+      "best_val_acc": 0.8017,
+      "final_train_loss": 0.0826,
+      "final_val_loss": 0.3242,
+      "min_val_loss": 0.2757,
+      "overfitting_signal": 0.0485,
+      "generalization_gap": 0.1482,
+      "imbalance_strategy": "focal_loss"
+    },
+    {
+      "model": "mobilenetv3",
+      "epochs_ran": 30,
+      "best_epoch": 10,
+      "best_val_acc": 0.7591,
+      "final_train_loss": 0.2035,
+      "final_val_loss": 0.3765,
+      "min_val_loss": 0.3334,
+      "overfitting_signal": 0.0432,
+      "generalization_gap": 0.0874,
+      "imbalance_strategy": "focal_loss"
+    },
+    {
+      "model": "inceptionv3",
+      "epochs_ran": 30,
+      "best_epoch": 23,
+      "best_val_acc": 0.7445,
+      "final_train_loss": 0.4516,
+      "final_val_loss": 0.4317,
+      "min_val_loss": 0.3478,
+      "overfitting_signal": 0.0839,
+      "generalization_gap": -0.0485,
+      "imbalance_strategy": "focal_loss"
+    }
+  ],
+  "confidence": [
+    {
+      "model": "resnet50",
+      "mean_confidence": 0.6648,
+      "mean_confidence_correct": 0.7014,
+      "mean_confidence_wrong": 0.4964,
+      "confidence_gap": 0.205,
+      "share_below_0.5": 0.2341
+    },
+    {
+      "model": "mobilenetv3",
+      "mean_confidence": 0.6214,
+      "mean_confidence_correct": 0.6554,
+      "mean_confidence_wrong": 0.4809,
+      "confidence_gap": 0.1745,
+      "share_below_0.5": 0.2711
+    },
+    {
+      "model": "inceptionv3",
+      "mean_confidence": 0.645,
+      "mean_confidence_correct": 0.685,
+      "mean_confidence_wrong": 0.4888,
+      "confidence_gap": 0.1962,
+      "share_below_0.5": 0.2584
+    }
+  ],
+  "feature_separation": [
+    {
+      "model": "resnet50",
+      "n_samples": 863,
+      "feature_dim": 2048,
+      "silhouette_score": -0.0149
+    },
+    {
+      "model": "mobilenetv3",
+      "n_samples": 863,
+      "feature_dim": 960,
+      "silhouette_score": 0.0126
+    },
+    {
+      "model": "inceptionv3",
+      "n_samples": 863,
+      "feature_dim": 2048,
+      "silhouette_score": 0.0129
+    }
+  ],
+  "efficiency": [
+    {
+      "model": "resnet50",
+      "params_total": 23518277,
+      "params_trainable": 10245,
+      "model_size_mb": 89.715,
+      "inference_time_ms": 4.6371,
+      "throughput_img_per_s": 215.65,
+      "flops": 4087146496,
+      "input_size": 224,
+      "checkpoint_size_mb": 90.025,
+      "tta": "d4",
+      "tta_views": 8,
+      "inference_time_ms_tta": 37.95400699993479,
+      "accuracy": 0.8215527230590962,
+      "f1": 0.7756758376343675,
+      "defect_recall": 0.9135514018691588
+    },
+    {
+      "model": "mobilenetv3",
+      "params_total": 4208437,
+      "params_trainable": 6405,
+      "model_size_mb": 16.054,
+      "inference_time_ms": 4.9784,
+      "throughput_img_per_s": 200.87,
+      "flops": 215316160,
+      "input_size": 224,
+      "checkpoint_size_mb": 16.258,
+      "tta": "d4",
+      "tta_views": 8,
+      "inference_time_ms_tta": 40.95246699987911,
+      "accuracy": 0.8053302433371958,
+      "f1": 0.7493981367005993,
+      "defect_recall": 0.8808411214953271
+    },
+    {
+      "model": "inceptionv3",
+      "params_total": 21795813,
+      "params_trainable": 10245,
+      "model_size_mb": 83.144,
+      "inference_time_ms": 9.5104,
+      "throughput_img_per_s": 105.15,
+      "flops": 5711178336,
+      "input_size": 299,
+      "checkpoint_size_mb": 83.477,
+      "tta": "d4",
+      "tta_views": 8,
+      "inference_time_ms_tta": 74.06883500007098,
+      "accuracy": 0.7960602549246814,
+      "f1": 0.7239261652191222,
+      "defect_recall": 0.852803738317757
+    }
+  ]
+}

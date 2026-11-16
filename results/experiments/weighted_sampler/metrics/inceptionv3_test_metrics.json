@@ -1,0 +1,134 @@
+{
+  "model": "inceptionv3",
+  "checkpoint": "results/experiments/weighted_sampler/models/inceptionv3/inceptionv3_best_epoch21_acc0.75.pt",
+  "tta": "d4",
+  "accuracy": 0.8030127462340672,
+  "precision": 0.7463967837563342,
+  "recall": 0.7410671872898205,
+  "f1": 0.7387869841978761,
+  "defect_accuracy": 0.895712630359212,
+  "defect_precision": 0.9043062200956937,
+  "defect_recall": 0.883177570093458,
+  "defect_f1": 0.8936170212765957,
+  "defect_miss_rate": 0.116822,
+  "per_class": {
+    "good": {
+      "precision": 0.8876404494382022,
+      "recall": 0.9080459770114943,
+      "f1": 0.8977272727272727,
+      "support": 435
+    },
+    "black": {
+      "precision": 0.7424242424242424,
+      "recall": 0.7424242424242424,
+      "f1": 0.7424242424242424,
+      "support": 132
+    },
+    "chipped": {
+      "precision": 0.6203703703703703,
+      "recall": 0.6979166666666666,
+      "f1": 0.6568627450980392,
+      "support": 96
+    },
+    "dry_pods": {
+      "precision": 0.7788461538461539,
+      "recall": 0.8709677419354839,
+      "f1": 0.8223350253807107,
+      "support": 93
+    },
+    "insect_damage": {
+      "precision": 0.7027027027027027,
+      "recall": 0.48598130841121495,
+      "f1": 0.574585635359116,
+      "support": 107
+    }
+  },
+  "efficiency": {
+    "params_total": 21795813,
+    "params_trainable": 10245,
+    "model_size_mb": 83.144,
+    "inference_time_ms": 8.9327,
+    "throughput_img_per_s": 111.95,
+    "flops": 5711178336,
+    "input_size": 299,
+    "device": "cuda",
+    "checkpoint_size_mb": 83.477,
+    "tta": "d4",
+    "tta_views": 8,
+    "inference_time_ms_tta": 74.99548199994024
+  },
+  "total_params": 21795813,
+  "trainable_params": 10245,
+  "inference_ms": 8.9327,
+  "n_samples": 863,
+  "class_distribution": {
+    "good": 435,
+    "black": 132,
+    "chipped": 96,
+    "dry_pods": 93,
+    "insect_damage": 107
+  },
+  "top_error_patterns": [
+    {
+      "true_class": "insect_damage",
+      "pred_class": "good",
+      "count": 26,
+      "share_of_true": 0.243
+    },
+    {
+      "true_class": "insect_damage",
+      "pred_class": "chipped",
+      "count": 16,
+      "share_of_true": 0.1495
+    },
+    {
+      "true_class": "good",
+      "pred_class": "black",
+      "count": 16,
+      "share_of_true": 0.0368
+    },
+    {
+      "true_class": "black",
+      "pred_class": "good",
+      "count": 15,
+      "share_of_true": 0.1136
+    },
+    {
+      "true_class": "good",
+      "pred_class": "insect_damage",
+      "count": 13,
+      "share_of_true": 0.0299
+    },
+    {
+      "true_class": "chipped",
+      "pred_class": "dry_pods",
+      "count": 10,
+      "share_of_true": 0.1042
+    },
+    {
+      "true_class": "good",
+      "pred_class": "chipped",
+      "count": 10,
+      "share_of_true": 0.023
+    },
+    {
+      "true_class": "insect_damage",
+      "pred_class": "black",
+      "count": 9,
+      "share_of_true": 0.0841
+    },
+    {
+      "true_class": "black",
+      "pred_class": "dry_pods",
+      "count": 8,
+      "share_of_true": 0.0606
+    },
+    {
+      "true_class": "black",
+      "pred_class": "chipped",
+      "count": 8,
+      "share_of_true": 0.0606
+    }
+  ],
+  "mean_confidence": 0.7388
+}

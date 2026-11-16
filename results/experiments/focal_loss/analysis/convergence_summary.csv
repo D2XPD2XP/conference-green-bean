@@ -1,0 +1,4 @@
+model,epochs_ran,best_epoch,best_val_acc,final_train_loss,final_val_loss,min_val_loss,overfitting_signal,generalization_gap,imbalance_strategy
+resnet50,30,13,0.8017,0.0826,0.3242,0.2757,0.0485,0.1482,focal_loss
+mobilenetv3,30,10,0.7591,0.2035,0.3765,0.3334,0.0432,0.0874,focal_loss
+inceptionv3,30,23,0.7445,0.4516,0.4317,0.3478,0.0839,-0.0485,focal_loss

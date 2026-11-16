@@ -1,0 +1,11 @@
+model,threshold,coverage,accuracy_on_covered,n_referred
+inceptionv3,0.0,1.0,0.7961,0
+inceptionv3,0.1,1.0,0.7961,0
+inceptionv3,0.2,1.0,0.7961,0
+inceptionv3,0.3,0.9919,0.7991,7
+inceptionv3,0.4,0.8911,0.8401,94
+inceptionv3,0.5,0.7416,0.8891,223
+inceptionv3,0.6,0.5898,0.9312,354
+inceptionv3,0.7,0.4438,0.9582,480
+inceptionv3,0.8,0.2387,0.9806,657
+inceptionv3,0.9,0.0394,0.9706,829

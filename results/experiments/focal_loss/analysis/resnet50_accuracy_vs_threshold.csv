@@ -1,0 +1,11 @@
+model,threshold,coverage,accuracy_on_covered,n_referred
+resnet50,0.0,1.0,0.8216,0
+resnet50,0.1,1.0,0.8216,0
+resnet50,0.2,1.0,0.8216,0
+resnet50,0.3,0.993,0.8261,6
+resnet50,0.4,0.9154,0.8582,73
+resnet50,0.5,0.7659,0.9077,202
+resnet50,0.6,0.6222,0.9367,326
+resnet50,0.7,0.4612,0.9573,465
+resnet50,0.8,0.2758,0.979,625
+resnet50,0.9,0.1159,0.98,763

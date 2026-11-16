@@ -1,0 +1,4 @@
+model,n_samples,feature_dim,silhouette_score
+resnet50,863,2048,-0.0132
+mobilenetv3,863,960,0.0126
+inceptionv3,863,2048,0.0141

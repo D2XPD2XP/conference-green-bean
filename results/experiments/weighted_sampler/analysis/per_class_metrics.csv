@@ -1,0 +1,22 @@
+kelas,model,precision,recall,f1,support
+good,resnet50,0.8914,0.9057,0.8985,435
+black,resnet50,0.7426,0.7652,0.7537,132
+chipped,resnet50,0.7711,0.6667,0.7151,96
+dry_pods,resnet50,0.9205,0.871,0.895,93
+insect_damage,resnet50,0.6053,0.6449,0.6244,107
+macro avg,resnet50,0.7862,0.7707,0.7774,863
+weighted avg,resnet50,0.8229,0.8216,0.8216,863
+good,mobilenetv3,0.8894,0.9057,0.8975,435
+black,mobilenetv3,0.7557,0.75,0.7529,132
+chipped,mobilenetv3,0.6449,0.7188,0.6798,96
+dry_pods,mobilenetv3,0.9059,0.828,0.8652,93
+insect_damage,mobilenetv3,0.6186,0.5607,0.5882,107
+macro avg,mobilenetv3,0.7629,0.7526,0.7567,863
+weighted avg,mobilenetv3,0.8099,0.81,0.8093,863
+good,inceptionv3,0.8876,0.908,0.8977,435
+black,inceptionv3,0.7424,0.7424,0.7424,132
+chipped,inceptionv3,0.6204,0.6979,0.6569,96
+dry_pods,inceptionv3,0.7788,0.871,0.8223,93
+insect_damage,inceptionv3,0.7027,0.486,0.5746,107
+macro avg,inceptionv3,0.7464,0.7411,0.7388,863
+weighted avg,inceptionv3,0.801,0.803,0.799,863

@@ -1,0 +1,6 @@
+kelas,model,n_samples,n_wrong,error_rate,mean_confidence_wrong,most_confused_with
+good,inceptionv3,435,40,0.092,0.5469,black
+black,inceptionv3,132,34,0.2576,0.5605,good
+chipped,inceptionv3,96,29,0.3021,0.5167,dry_pods
+dry_pods,inceptionv3,93,12,0.129,0.6309,chipped
+insect_damage,inceptionv3,107,55,0.514,0.5834,good

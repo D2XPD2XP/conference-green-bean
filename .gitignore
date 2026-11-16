@@ -1,0 +1,59 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ---- Virtual environments ----
+.venv/
+venv/
+env/
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+
+# ---- Environment ----
+.env
+
+# ---- Data (jangan commit dataset) ----
+data/raw/
+data/annotated/
+data/crops_raw/
+data/crops/
+data/archive/
+data/cache/
+data/crops_aug_*/
+
+# ---- Results (kecuali .gitkeep) ----
+results/models/
+results/logs/
+results/figures/
+results/metrics/
+results/analysis/
+results/tmp/
+results_archive/
+runs/
+
+# ---- Editors / OS ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ---- Keep placeholder dirs ----
+!**/.gitkeep
+
+# ---- Claude Code (konteks & skill lokal, tidak masuk repo) ----
+.claude/
+CLAUDE.md
+CLAUDE.local.md
+.mcp.json
+docs/
+REVISION_RESULTS.md
+project.md

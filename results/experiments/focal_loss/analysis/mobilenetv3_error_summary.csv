@@ -1,0 +1,6 @@
+kelas,model,n_samples,n_wrong,error_rate,mean_confidence_wrong,most_confused_with
+good,mobilenetv3,435,39,0.0897,0.456,insect_damage
+black,mobilenetv3,132,35,0.2652,0.4829,good
+chipped,mobilenetv3,96,26,0.2708,0.4812,good
+dry_pods,mobilenetv3,93,19,0.2043,0.495,chipped
+insect_damage,mobilenetv3,107,49,0.4579,0.4935,good

@@ -1,0 +1,6 @@
+kelas,model,n_samples,n_wrong,error_rate,mean_confidence_wrong,most_confused_with
+good,resnet50,435,49,0.1126,0.4973,black
+black,resnet50,132,19,0.1439,0.4967,good
+chipped,resnet50,96,33,0.3438,0.4793,black
+dry_pods,resnet50,93,11,0.1183,0.4918,chipped
+insect_damage,resnet50,107,42,0.3925,0.5098,good

@@ -1,0 +1,134 @@
+{
+  "model": "resnet50",
+  "checkpoint": "results/experiments/focal_loss/models/resnet50/resnet50_best_epoch13_acc0.80.pt",
+  "tta": "d4",
+  "accuracy": 0.8215527230590962,
+  "precision": 0.7791145215720812,
+  "recall": 0.7777727987042464,
+  "f1": 0.7756758376343675,
+  "defect_accuracy": 0.9003476245654692,
+  "defect_precision": 0.8886363636363637,
+  "defect_recall": 0.9135514018691588,
+  "defect_f1": 0.9009216589861752,
+  "defect_miss_rate": 0.086449,
+  "per_class": {
+    "good": {
+      "precision": 0.9125295508274232,
+      "recall": 0.8873563218390804,
+      "f1": 0.8997668997668997,
+      "support": 435
+    },
+    "black": {
+      "precision": 0.6807228915662651,
+      "recall": 0.8560606060606061,
+      "f1": 0.7583892617449665,
+      "support": 132
+    },
+    "chipped": {
+      "precision": 0.7241379310344828,
+      "recall": 0.65625,
+      "f1": 0.6885245901639344,
+      "support": 96
+    },
+    "dry_pods": {
+      "precision": 0.9010989010989011,
+      "recall": 0.8817204301075269,
+      "f1": 0.8913043478260869,
+      "support": 93
+    },
+    "insect_damage": {
+      "precision": 0.6770833333333334,
+      "recall": 0.6074766355140186,
+      "f1": 0.6403940886699507,
+      "support": 107
+    }
+  },
+  "efficiency": {
+    "params_total": 23518277,
+    "params_trainable": 10245,
+    "model_size_mb": 89.715,
+    "inference_time_ms": 4.6371,
+    "throughput_img_per_s": 215.65,
+    "flops": 4087146496,
+    "input_size": 224,
+    "device": "cuda",
+    "checkpoint_size_mb": 90.025,
+    "tta": "d4",
+    "tta_views": 8,
+    "inference_time_ms_tta": 37.95400699993479
+  },
+  "total_params": 23518277,
+  "trainable_params": 10245,
+  "inference_ms": 4.6371,
+  "n_samples": 863,
+  "class_distribution": {
+    "good": 435,
+    "black": 132,
+    "chipped": 96,
+    "dry_pods": 93,
+    "insect_damage": 107
+  },
+  "top_error_patterns": [
+    {
+      "true_class": "good",
+      "pred_class": "black",
+      "count": 27,
+      "share_of_true": 0.0621
+    },
+    {
+      "true_class": "insect_damage",
+      "pred_class": "good",
+      "count": 20,
+      "share_of_true": 0.1869
+    },
+    {
+      "true_class": "good",
+      "pred_class": "insect_damage",
+      "count": 17,
+      "share_of_true": 0.0391
+    },
+    {
+      "true_class": "insect_damage",
+      "pred_class": "black",
+      "count": 12,
+      "share_of_true": 0.1121
+    },
+    {
+      "true_class": "chipped",
+      "pred_class": "black",
+      "count": 10,
+      "share_of_true": 0.1042
+    },
+    {
+      "true_class": "insect_damage",
+      "pred_class": "chipped",
+      "count": 10,
+      "share_of_true": 0.0935
+    },
+    {
+      "true_class": "chipped",
+      "pred_class": "insect_damage",
+      "count": 10,
+      "share_of_true": 0.1042
+    },
+    {
+      "true_class": "chipped",
+      "pred_class": "good",
+      "count": 10,
+      "share_of_true": 0.1042
+    },
+    {
+      "true_class": "black",
+      "pred_class": "good",
+      "count": 7,
+      "share_of_true": 0.053
+    },
+    {
+      "true_class": "black",
+      "pred_class": "dry_pods",
+      "count": 6,
+      "share_of_true": 0.0455
+    }
+  ],
+  "mean_confidence": 0.6648
+}

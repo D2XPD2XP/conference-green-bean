@@ -1,0 +1,16 @@
+model,true_class,pred_class,count,share_of_true
+resnet50,good,insect_damage,23,0.0529
+resnet50,insect_damage,good,20,0.1869
+resnet50,good,black,16,0.0368
+resnet50,black,good,15,0.1136
+resnet50,chipped,good,13,0.1354
+resnet50,chipped,insect_damage,11,0.1146
+resnet50,insect_damage,black,10,0.0935
+resnet50,insect_damage,chipped,8,0.0748
+resnet50,black,insect_damage,8,0.0606
+resnet50,dry_pods,chipped,5,0.0538
+resnet50,chipped,black,5,0.0521
+resnet50,black,chipped,4,0.0303
+resnet50,black,dry_pods,4,0.0303
+resnet50,dry_pods,black,4,0.043
+resnet50,chipped,dry_pods,3,0.0312
